@@ -1,7 +1,6 @@
-body{
-background-color: #D6C3BD;
+body {
+    background-color: #D6C3BD;
 }
-
 
 .navbar {
     border-radius: 3vh;
@@ -10,49 +9,63 @@ background-color: #D6C3BD;
     justify-content: space-between;
     background-color: beige;
     padding: 0.5vh 1.5vh;
-  }
-  
-  .logo img {
+}
+
+.logo img {
     height: 40px;
     border-radius: 50%;
-  }
-  
-  .nav-links {
+}
+
+.nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
-  }
-  
-  .nav-links li a {
+}
+
+.nav-links li a {
     text-decoration: none;
     color: rgb(201, 134, 48);
     font-size: 16px;
-    transition: color 0.3s;
-  }
-  
-  .nav-links li a:hover {
+    transition: color 0.3s, transform 0.3s; /* Add transform transition */
+}
+
+.nav-links li a:hover {
     color: brown;
-  }
+    transform: scale(1.1); /* Scale effect on hover */
+}
 
+.craft-text {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10vh;
+}
 
-  .craft{
+.craft {
     background-color: rgb(251, 233, 239);
     border: 0.5vh solid black;
     border-radius: 3vh;
     margin-top: 20vh;
-  }
-  .craft h1{
+}
+
+.craft img {
+    width: 30vh;
+    height: auto;
+    border-radius: 3vh;
+    
+}
+
+.craft h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
     margin-left: 15vh;
     font-size: 3em;
   }
 
   .craft p{
-    
+    font-family: Georgia, 'Times New Roman', Times, serif;
     /* font-weight: bol; */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 4vh;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    margin-top: 20vh;
     margin-left: 16vh;
     font-size: 1.2em;
     /* margin:10vh; */
