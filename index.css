@@ -2,28 +2,6 @@ body{
 background-color: #D6C3BD;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.nav-links li a {
-    transition: color 0.3s, transform 0.3s; /* Add transform transition */
-}
-
-.nav-links li a:hover {
-    color: brown;
-    transform: scale(1.1); /* Scale effect on hover */
-}
-
-.craft h1, .about h1 {
-    animation: fadeIn 1s ease-in; /* Fade-in effect */
-}
-
 
 .navbar {
     border-radius: 3vh;
@@ -56,29 +34,13 @@ background-color: #D6C3BD;
     color: brown;
   }
 
-  /*<--- CRAFT section---> */
 
   .craft{
     background-color: rgb(251, 233, 239);
     border: 0.5vh solid black;
     border-radius: 3vh;
     margin-top: 20vh;
-    /* display: flex; */
-  
-
   }
-
-
-  .craft img{
-    /* display: flex; */
-    margin-top: 10vh;
-    /* margin: 5vh; */
-    margin-left: 30vh;
-    height: auto;
-    width: 40vh;
-    border-radius: 50%;
-  }
-
   .craft h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 10vh;
@@ -90,20 +52,12 @@ background-color: #D6C3BD;
     
     /* font-weight: bol; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-    margin-top: 25vh;
+    margin-top: 4vh;
     margin-left: 16vh;
-    font-size: 2em;
+    font-size: 1.2em;
     /* margin:10vh; */
   }
-
-.craft-text{
-    display: flex;    
-}
-/* <---button---> */
-
-.btn { 
-    
+.btn {
     margin-top: 5vh;
     margin-bottom: 5vh;
     margin-left: 16vh;
@@ -124,12 +78,10 @@ background-color: #D6C3BD;
 }
 
 .about{
-    margin-top: 10vh;
-    margin-left: 30vh;
     background-color: rgb(192, 166, 175);
     border: 0.5vh solid black;
     border-radius: 3vh;
-    /* margin: 10vh  */
+    margin: 10vh 
 }
 .about h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -151,36 +103,6 @@ background-color: #D6C3BD;
     margin-bottom: 5vh;
     font-size: 1.6em;
     font-weight: bold;
-    margin-left: 10vh;
     
     
-}
-
-.dcc p{
-    font-size: 1.2em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 9vh;
-    margin-right: 8vh;
-    /* margin-bottom: 2vh; */
-}
-
-@keyframes slide-in {
-  0% {
-    transform: translateX(-100%); /* Start off-screen to the left */
-    opacity: 0; /* Fully transparent */
-  }
-  100% {
-    transform: translateX(0); /* Slide to its final position */
-    opacity: 1; /* Fully visible */
-  }
-}
-
-.craft{
-  smooth: slide-in 0.25s ease-out; /* Apply the animation */
-  animation: slide-in 0.25s ease-out; /* Apply the animation */
-}
-
-.about{
-  smooth: slide-in 0.5s ease-out; /* Apply the animation */
-  animation: slide-in 0.5s ease-out; /* Apply the animation */
 }
