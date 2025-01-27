@@ -73,25 +73,45 @@ body {
     /* margin:10vh; */
     
   }
-.btn {
+
+/* button section */
+
+#btn-section {
+    border: none; 
     margin-top: 5vh;
     margin-bottom: 5vh;
     margin-left: 16vh;
     
 }  
-.btn button{
+#btn-section button{
     padding: 1vh 2vh;
     height: auto;
     width: auto;
     background-color: transparent;
     border-radius: 1.5vh;
+    /* border: none;  */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
 }
-.btn button:hover{
+#btn-section button:hover{
     background-color: #fdffe5;
     color: brown;
     border: 0.5vh solid #D6C3BD;
     transition: 0.5s smooth;
 }
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* about section */
+
 
 .about{
     background-color: rgb(192, 166, 175);
@@ -122,3 +142,119 @@ body {
     
     
 }
+
+
+
+
+/* For tablets (screens smaller than 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1vh;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .craft {
+    margin-top: 10vh;
+  }
+
+  .craft img {
+    width: 25vh;
+  }
+
+  .craft h1 {
+    font-size: 2em;
+    margin-left: 5vh;
+  }
+
+  .craft p {
+    margin-left: 5vh;
+    margin-right: 5vh;
+    font-size: 1em;
+  }
+
+  #btn-section {
+    margin-left: 5vh;
+    text-align: center;
+  }
+
+  .about {
+    margin: 5vh;
+  }
+
+  .about h1 {
+    font-size: 2em;
+  }
+
+  .dcc {
+    flex-direction: column;
+    gap: 5vh;
+    text-align: center;
+  }
+
+  .dcc h3 {
+    font-size: 1.2em;
+  }
+}
+
+/* For mobile (screens smaller than 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .craft {
+    margin-top: 5vh;
+  }
+
+  .craft img {
+    width: 20vh;
+  }
+
+  .craft h1 {
+    font-size: 1.5em;
+    margin-left: 2vh;
+  }
+
+  .craft p {
+    margin-left: 2vh;
+    margin-right: 2vh;
+    font-size: 0.9em;
+  }
+
+  #btn-section {
+    margin-left: 2vh;
+    text-align: center;
+  }
+
+  .about {
+    margin: 2vh;
+    padding: 2vh;
+  }
+
+  .about h1 {
+    font-size: 1.5em;
+  }
+
+  .dcc {
+    flex-direction: column;
+    gap: 2vh;
+    text-align: center;
+  }
+
+  .dcc h3 {
+    font-size: 1em;
+  }
+}
+
