@@ -69,6 +69,7 @@ nav #cart img {
 /* cake  type */
 
 .cake-type{
+    display: flex;
     margin-top: 8vh;
 }
 
