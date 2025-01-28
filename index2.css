@@ -116,8 +116,10 @@ nav #cart img {
 /* } */ 
 
 .heading h1{
-    margin-bottom: 7em;
     font-size: 6em;
     margin-top: 30vh;
     text-align: center;
+    text-shadow:  2px 2px 4px #000000;
+    character-spacing: 2em;
+    margin-bottom: 6em;
 }
